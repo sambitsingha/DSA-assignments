@@ -37,3 +37,55 @@ int main()
         printf("\n%d x %d = %d", n, i, n * i);
     return 0;
 }*/
+
+// 4 --> WAP to find out the factorial of any number.
+
+/*#include <stdio.h>
+int main()
+{
+    int i, fact = 1, n;
+    printf("\nEnter a number: ");
+    scanf("%d", &n);
+    for (i = 1; i <= n; ++i)
+        fact *= i;
+    printf("\nThe factorial of %d is %d", n, fact);
+    return 0;
+}*/
+
+// 5 --> Not possible
+
+// 6 --> WAP to check whether an inputted number is a prime number or a composite number.
+
+/*#include <stdio.h>
+int main()
+{
+    int i, flag = 0, n;
+    printf("\n Enter a Number : ");
+    scanf("%d", &n);
+    if (n == 0 || n == 1)
+    {
+        printf("\n The given number is not Prime.");
+    }
+
+    else
+    {
+        for (i = 2; i <= n / 2; i++)
+            if ((n % i) == 0)
+            {
+                flag++;
+                break;
+            }
+    }
+    // n should be greater than 1
+    if (flag == 0)
+    {
+        printf("\nThe Given number is Prime");
+    }
+    else
+    {
+        printf("\nThe Given number is Composite");
+    }
+    return 0;
+}*/
+
+// 6 --> WAP to check whether an inputted number is a palindrome number or no
