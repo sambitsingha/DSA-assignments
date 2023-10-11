@@ -249,14 +249,9 @@ int main()
 	double a, b, c;
 	double discriminant, root1, root2;
 
-	// Input coefficients
 	printf("Enter the coefficients (a, b, and c) of the quadratic equation:\n");
 	scanf("%lf %lf %lf", &a, &b, &c);
-
-	// Calculate the discriminant
 	discriminant = b * b - 4 * a * c;
-
-	// Check if the discriminant is positive, negative, or zero
 	if (discriminant > 0)
 	{
 		// Two distinct real roots
@@ -278,5 +273,121 @@ int main()
 		printf("Root 1 = %.2lf + %.2lfi and Root 2 = %.2lf - %.2lfi\n", realPart, imaginaryPart, realPart, imaginaryPart);
 	}
 
+	return 0;
+}*/
+
+// 14 -> Even Odd using SWITCH- CASE
+
+/*#include <stdio.h>
+int main()
+{
+	int num;
+	printf("Enter a number: ");
+	scanf("%d",&num);
+
+	switch(num%2)
+	{
+		case 0: printf("\n%d is even",num);
+			break;
+		case 1: printf("\n%d is odd",num);
+			break;
+	}
+	return 0;
+}*/
+
+// 15 -> Vowel check using SWITCH CASE
+
+/*#include <stdio.h>
+int main()
+{
+	char letter;
+	printf("Enter an alphabet: ");
+	scanf("%c",&letter);
+	switch(letter)
+	{
+		case 'a':
+		case 'A':
+		case 'e':
+		case'E':
+		case 'i':
+		case 'I':
+		case 'o':
+		case 'O':
+		case 'u':
+		case 'U': printf("\n%c is an vowel\n",letter);
+			  break;
+		default: printf("\n%c is a consonant\n",letter);
+	}
+	return 0;
+}*/
+
+// 16 -> Show weekdays using SWITCH CASE
+
+/*#include <stdio.h>
+int main()
+{
+	int ch;
+	printf("Enter a number: ");
+	scanf("%d", &ch);
+	switch (ch)
+	{
+	case 1:
+		printf("\nMonday");
+		break;
+	case 2:
+		printf("\nTuesday");
+		break;
+	case 3:
+		printf("\nWednesday");
+		break;
+	case 4:
+		printf("\nThrusday");
+		break;
+	case 5:
+		printf("\nFriday");
+		break;
+	case 6:
+		printf("\nSaturday");
+		break;
+	case 7:
+		printf("\n Sunday");
+		break;
+	default:
+		printf("\nInvalid Input");
+	}
+
+	return 0;
+}*/
+
+// 17 -->  WAP to enter the marks of a student in three different subjects. Calculate the grade of the student as per the following rules using switch statement.
+
+/*#include <stdio.h>
+int main()
+{
+	int marks1, marks2, marks3, avg;
+	printf("Enter the three subjects marks : ");
+	scanf("%d%d%d", &marks1, &marks2, &marks3);
+	avg = (marks1 + marks2 + marks3) / 3;
+	switch (avg / 10)
+	{
+	case 10:
+	case 9:
+		printf("O grade");
+		break;
+	case 8:
+		printf("E grade");
+		break;
+	case 7:
+		printf("A grade");
+		break;
+	case 6:
+		printf("B grade");
+		break;
+	case 5:
+		printf("C grade");
+		break;
+	default:
+		printf("F grade");
+	}
 	return 0;
 }*/
