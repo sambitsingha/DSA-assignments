@@ -154,23 +154,23 @@ int main()
 	double tax;
 
 	printf("Enter your income: ");
-	scanf("%ld",&income);
+	scanf("%ld", &income);
 	if (income <= 150000)
 		printf("\nNo tax\n");
-	else if (income>150000 && income <=300000)
+	else if (income > 150000 && income <= 300000)
 	{
-		tax = (10*income)/100;
-		printf("\n%lf is your tax",tax);
+		tax = (10 * income) / 100;
+		printf("\n%lf is your tax", tax);
 	}
-	else if (income>300000 && income <= 500000)
+	else if (income > 300000 && income <= 500000)
 	{
-		tax  = (20*income)/100;
-		printf("\n%lf is your tax\n",tax);
+		tax = (20 * income) / 100;
+		printf("\n%lf is your tax\n", tax);
 	}
 	else
 	{
-		tax = (30*income)/100;
-		printf("\n%lf is your tax\n",tax);
+		tax = (30 * income) / 100;
+		printf("\n%lf is your tax\n", tax);
 	}
 	return 0;
 }*/
