@@ -88,4 +88,56 @@ int main()
     return 0;
 }*/
 
-// 6 --> WAP to check whether an inputted number is a palindrome number or no
+// 7 --> WAP to check whether an inputted number is a palindrome number or not
+
+/*#include <stdio.h>
+int main()
+{
+    int i, n, rem, rev = 0;
+    printf("\nEnter a number: ");
+    scanf("%d", &n);
+    int num = n;
+    while (n != 0)
+    {
+        rem = n % 10;
+        rev = rev * 10 + rem;
+        n = n / 10;
+    }
+
+    if (rev == num)
+        printf("\n%d is palindrome", num);
+    else
+        printf("\n%d is not palinrome", num);
+    return 0;
+}*/
+
+// 8 -->  WAP to check whether an inputted number is an Armstrong number or not
+
+/*#include <stdio.h>
+#include <math.h>
+int main()
+{
+    int n, temp, count = 0, sum = 0, rem;
+    printf("Enter the value of N: ");
+    scanf("%d", &n);
+    temp = n;
+    while (temp > 0)
+    {
+        temp = temp / 10;
+        count++;
+    }
+    temp = n;
+    while (temp > 0)
+    {
+        rem = temp % 10;
+        sum = sum + pow(rem, count);
+        temp = temp / 10;
+    }
+    if (n == sum)
+        printf("\n%d is an Armstrong number", n);
+    else
+        printf("\n%d is not an armstrong number", n);
+    return 0;
+}*/
+
+// 9 --> WAP to enter a decimal number. Display the binary equivalent of this decimal number.
