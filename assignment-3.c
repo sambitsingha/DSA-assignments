@@ -141,3 +141,119 @@ int main()
 }*/
 
 // 9 --> WAP to enter a decimal number. Display the binary equivalent of this decimal number.
+
+/*#include <stdio.h>
+int main()
+{
+    int bin = 0, r, n, i = 1;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    while (n != 0)
+    {
+        r = n % 2;
+        bin = bin + (r * i);
+        i = i * 10;
+        n = n / 2;
+    }
+    printf("\n%d", bin);
+    return 0;
+}*/
+
+// 10 --> WAP to enter a binary number. Display the decimal equivalent of this binary number.
+
+/*#include <stdio.h>
+#include <math.h>
+int main()
+{
+    int dec = 0, bin, rem, i, temp, count = 0;
+    printf("Enter any Binary Number: ");
+    scanf("%d", &bin);
+    temp = bin;
+    while (temp > 0)
+    {
+        temp = temp / 10;
+        count++;
+    }
+    for (i = 0; i < count; i++)
+    {
+        rem = bin % 10;
+        dec = dec + (pow(2, i) * rem);
+        bin = bin / 10;
+    }
+    printf("\n%d", dec);
+    return 0;
+}*/
+
+// 11 --> WAP to display the Fibonacci series up to the nth term.
+
+/*#include <stdio.h>
+int main()
+{
+    int t1 = 0, t2 = 1, nxt = t1 + t2, n, i;
+    printf("Enter the number of terms of the fibonacci series: ");
+    scanf("%d", &n);
+    printf("Fibonacci Series is:\n");
+    printf("%d\t%d", t1, t2);
+    for (i = 3; i <= n; i++)
+    {
+        printf("\t%d", nxt);
+        t1 = t2;
+        t2 = nxt;
+        nxt = t1 + t2;
+    }
+    return 0;
+}*/
+
+// 14 -->  Write a menu driven program to implement a calculator.
+
+/*#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int ch, a, b;
+    while (1)
+    {
+        printf("\n\nCalculator\n");
+        printf("\n1. Add");
+        printf("\n2. Subtract");
+        printf("\n3. Multiply");
+        printf("\n4. Divide");
+        printf("\n5. Mod");
+        printf("\n6. Exit");
+        printf("\n\nEnter two numbers: \n");
+        scanf("%d%d", &a, &b);
+        printf("Enter your choice: ");
+        scanf("%d", &ch);
+        switch (ch)
+        {
+        case 1:
+            printf("\n%d", a + b);
+            break;
+        case 2:
+            printf("\n%d", a - b);
+            break;
+        case 3:
+            printf("\n%d", a * b);
+            break;
+        case 4:
+            if (b == 0)
+            {
+                printf("\nError! Division by zero not possible.");
+            }
+            else
+            {
+                printf("\n%d", a / b);
+            }
+            break;
+        case 5:
+            printf("\n%d", a % b);
+            break;
+        case 6:
+            exit(1);
+            break;
+        default:
+            printf("\nInvalid choice\n");
+        }
+    }
+    return 0;
+}*/
