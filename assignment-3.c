@@ -204,6 +204,57 @@ int main()
     return 0;
 }*/
 
+// 12 -->  WAP to find out the GCD of two numbers.
+
+/*#include <stdio.h>
+int main()
+{
+    int num1, num2, gcd;
+    printf("Enter first number: ");
+    scanf("%d", &num1);
+    printf("Enter second number: ");
+    scanf("%d", &num2);
+
+    while (num1 != num2)
+    {
+        if (num1 > num2)
+        {
+            num1 = num1 - num2;
+        }
+        else
+        {
+            num2 = num2 - num1;
+        }
+    }
+
+    gcd = num1;
+    printf("GCD of %d and %d is %d\n", num1, num2, gcd);
+    return 0;
+}*/
+
+// 13 -->  WAP to find out the sum of the following series: 1 / 1 !+1 / 2 !+1 / 3 !+ ……………………..+ 1 / n !
+
+/*#include <stdio.h>
+int main()
+{
+    int n, i;
+    double sum = 0, factorial = 1;
+
+    printf("Enter the number of terms: ");
+    scanf("%d", &n);
+    for (i = 1; i <= n; i++)
+    {
+        factorial = 1;
+        for (int j = 1; j <= i; j++)
+        {
+            factorial *= j;
+        }
+        sum += 1.0 / factorial;
+    }
+    printf("Sum of the series up to %d terms is: %lf\n", n, sum);
+    return 0;
+}*/
+
 // 14 -->  Write a menu driven program to implement a calculator.
 
 /*#include <stdio.h>
