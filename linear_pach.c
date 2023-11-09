@@ -14,7 +14,6 @@ int findElement(int arr[], int n, int val, int *pos)
 
 int main()
 {
-    system("cls");
     int arr[20], i, n;
     printf("Enter the number of elements you want in array: ");
     scanf("%d", &n);
