@@ -133,7 +133,7 @@ int main()
         sum = sum + pow(rem, count);
         temp = temp / 10;
     }
-    if (n == sum)
+    if (sum == n)
         printf("\n%d is an Armstrong number", n);
     else
         printf("\n%d is not an armstrong number", n);
