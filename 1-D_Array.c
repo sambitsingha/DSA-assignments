@@ -78,7 +78,7 @@ int main()
 
 // 4 -  WAP to delete an element from a given position of an array
 
-#include <stdio.h>
+/*#include <stdio.h>
 int main()
 {
     int a[20], i, n;
@@ -103,4 +103,39 @@ int main()
         printf("%d ", a[i]);
     }
     return 0;
-}
+}*/
+
+// 5 - WAP to implement Linear search on an array.
+
+/*#include <stdio.h>
+int main()
+{
+    system("cls");
+    int arr[20], i, n, val, flag = 0;
+    printf("Enter the range of array: ");
+    scanf("%d", &n);
+    for (i = 0; i < n; i++)
+    {
+        printf("Enter %d number: ", i + 1);
+        scanf("%d", &arr[i]);
+    }
+    printf("\nEnter the value you are searching for: ");
+    scanf("%d", &val);
+    for (i = 0; i < n; i++)
+    {
+        if (arr[i] == val)
+            flag++;
+    }
+    if (flag == 0)
+    {
+        printf("\nValue not found in the list.");
+    }
+    else
+    {
+        printf("\n%d is present at location %d.", val, i + 1);
+    }
+    getch();
+    return 0;
+}*/
+
+// 6 - WAP to implement Bubble sort.
