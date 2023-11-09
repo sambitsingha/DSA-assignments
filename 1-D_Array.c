@@ -139,3 +139,74 @@ int main()
 }*/
 
 // 6 - WAP to implement Bubble sort.
+
+/*#include <stdio.h>
+int sort(int arr[], int n)
+{
+    for (int i = 0; i < n - 1; i++)
+    {
+        for (int j = 0; j < n - i - 1; j++)
+        {
+            if (arr[j] > arr[j + 1])
+            {
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+}
+
+int main()
+{
+    int arr[20], n, i;
+    printf("\nEnter the range of array: ");
+    scanf("%d", &n);
+    for (i = 0; i < n; i++)
+    {
+        printf("\nEnter %d number: ", i + 1);
+        scanf("%d", &arr[i]);
+    }
+
+    sort(arr, n);
+    printf("\nSorted Array:\t");
+    for (i = 0; i < n; i++)
+    {
+        printf("%d\t", arr[i]);
+    }
+    return 0;
+}*/
+
+// 7 - WAP to reverse an array
+
+/*#include <stdio.h>
+
+int reverse(int arr[], int n)
+{
+    for (int i = 0; i < n / 2; i++)
+    {
+        int temp = arr[i];
+        arr[i] = arr[n - i - 1];
+        arr[n - i - 1] = temp;
+    }
+}
+int main()
+{
+    int arr[20], i, n;
+    printf("\nEnter the range of array: ");
+    scanf("%d", &n);
+    for (i = 0; i < n; i++)
+    {
+        printf("\nEnter %d number: ", i + 1);
+        scanf("%d", &arr[i]);
+    }
+    reverse(arr, n);
+    printf("\nReversed Array:\t");
+    for (i = 0; i < n; i++)
+    {
+        printf("%d\t", arr[i]);
+    }
+    return 0;
+}*/
+
+// 8 -  WAP to merge two arrays into a new array.
