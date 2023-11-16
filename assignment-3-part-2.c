@@ -115,7 +115,7 @@ int main()
 
 // 5. WAP to display all prime numbers within a given range
 
-#include <stdio.h>
+/*#include <stdio.h>
 int main()
 {
     int start, end, isPrime;
@@ -146,4 +146,4 @@ int main()
     }
 
     return 0;
-}
+}*/
