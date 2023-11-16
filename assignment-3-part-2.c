@@ -147,3 +147,30 @@ int main()
 
     return 0;
 }*/
+
+// 6 - Palindrome number in a range
+
+#include <stdio.h>
+int main()
+{
+    int rem = 0, num, temp, m, n;
+    printf("Enter the range: \n");
+    scanf("%d%d", &m, &n);
+    printf("\nPalindromes in the range %d to %d are :\n", m, n);
+    for (num = m; num <= n; num++)
+    {
+        int rev = 0;
+        temp = num;
+        while (temp != 0)
+        {
+            rem = temp % 10;
+            rev = rev * 10 + rem;
+            temp /= 10;
+        }
+        if (rev == num)
+        {
+            printf("%d\t", num);
+        }
+    }
+    return 0;
+}
