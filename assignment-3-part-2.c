@@ -115,38 +115,30 @@ int main()
 
 // 5. WAP to display all prime numbers within a given range
 
-/*#include <stdio.h>
-
+#include <stdio.h>
 int main()
 {
-    system("cls");
     int start, end, isPrime;
 
-    // Input the range from the user
     printf("Enter the start of the range: ");
     scanf("%d", &start);
     printf("Enter the end of the range: ");
     scanf("%d", &end);
 
-    // Display prime numbers within the given range
     printf("Prime numbers between %d and %d are:\n", start, end);
-
-    // Iterate through the numbers within the range and check for prime
     for (int num = start; num <= end; num++)
     {
-        isPrime = 1; // Assume num is prime
+        isPrime = 1;
 
-        // Check if num is divisible by any number from 2 to num - 1
         for (int i = 2; i * i <= num; i++)
         {
             if (num % i == 0)
             {
-                isPrime = 0; // num is not prime
+                isPrime = 0;
                 break;
             }
         }
 
-        // If num is prime, print it
         if (isPrime && num > 1)
         {
             printf("%d ", num);
@@ -154,4 +146,4 @@ int main()
     }
 
     return 0;
-}*/
+}
