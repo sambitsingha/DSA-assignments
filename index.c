@@ -32,17 +32,15 @@ int main()
     }
     printf("\n");
 
-    // Convert the sum from binary to decimal
-    int decimalSum = 0, base = 1;
-    int j = i; // Resetting the counter for decimal conversion
-
+    /* int decimalSum = 0, base = 1;
+    int j = i;
     while (j >= 0)
     {
         decimalSum += sum[j--] * base;
         base *= 2;
     }
-
     printf("Decimal equivalent of the sum: %d\n", decimalSum);
+    */
 
     return 0;
 }
