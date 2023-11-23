@@ -41,6 +41,5 @@ int main()
     }
     printf("Decimal equivalent of the sum: %d\n", decimalSum);
     */
-
     return 0;
 }
