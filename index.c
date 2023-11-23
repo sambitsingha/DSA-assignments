@@ -5,7 +5,7 @@ int main()
 {
     long long binary1, binary2;
     int i = 0, remainder = 0, sum[20];
-
+    int bin;
     printf("Enter the first binary number: ");
     scanf("%lld", &binary1);
     printf("Enter the second binary number: ");
@@ -28,18 +28,9 @@ int main()
     printf("Sum of the two binary numbers: ");
     while (i >= 0)
     {
-        printf("%d", sum[i--]);
+        bin = sum[i--];
+        printf("%d", bin);
     }
     printf("\n");
-
-    /* int decimalSum = 0, base = 1;
-    int j = i;
-    while (j >= 0)
-    {
-        decimalSum += sum[j--] * base;
-        base *= 2;
-    }
-    printf("Decimal equivalent of the sum: %d\n", decimalSum);
-    */
     return 0;
 }
