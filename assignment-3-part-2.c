@@ -86,10 +86,9 @@ int main()
 1234321
 123454321*/
 
-/*#include <stdio.h>
+#include <stdio.h>
 int main()
 {
-    system("cls");
     int i, j, n;
     printf("Enter the number of rows: ");
     scanf("%d", &n);
@@ -111,7 +110,7 @@ int main()
         printf("\n");
     }
     return 0;
-}*/
+}
 
 // 5. WAP to display all prime numbers within a given range
 
@@ -150,7 +149,7 @@ int main()
 
 // 6 - Palindrome number in a range
 
-#include <stdio.h>
+/*#include <stdio.h>
 int main()
 {
     int rem = 0, num, temp, m, n;
@@ -173,4 +172,4 @@ int main()
         }
     }
     return 0;
-}
+}*/
