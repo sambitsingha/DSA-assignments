@@ -25,29 +25,29 @@ int arrSum (int a[],int n)
 	return sum;
 }*/
 
-//WAP to find the largest element of an array using function
+// WAP to find the largest element of an array using function
 
 /*#include <stdio.h>
 int a[10],i,n,result=0;
-        printf("Enter the number of elements you want in array : ");
-        scanf("%d", &n);
-        for (i = 0; i < n; i++)
-        {
-                printf("\nEnter %d number: ", i + 1);
-                scanf("%d", &a[i]);
-        }
+		printf("Enter the number of elements you want in array : ");
+		scanf("%d", &n);
+		for (i = 0; i < n; i++)
+		{
+				printf("\nEnter %d number: ", i + 1);
+				scanf("%d", &a[i]);
+		}
 
 int largest(int a[],int);
 int main()
 {
 	int a[10],i,n,result;
 	printf("\nEnter the number of elements to input: ");
-        scanf("%d",&n);
-        for(i=0;i<n;i++)
-        {
-                printf("\nEnter element %d: ",i+1);
-                scanf("%d",&a[i]);
-        }
+		scanf("%d",&n);
+		for(i=0;i<n;i++)
+		{
+				printf("\nEnter element %d: ",i+1);
+				scanf("%d",&a[i]);
+		}
 	result = largest(a,n);
 	printf("\n%d is the largest number in the array\n",result);
 	return 0;
@@ -65,60 +65,60 @@ int largest( int a[],int n)
 	return max;
 }*/
 
-//WAP to implement Bubble Sort using function
+// WAP to implement Bubble Sort using function
 
 /*#include <stdio.h>
 int sort(int arr[], int n)
 {
-    for (int i = 0; i < n - 1; i++)
-    {
-        for (int j = 0; j < n - i - 1; j++)
-        {
-            if (arr[j] > arr[j + 1])
-            {
-                int temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
-            }
-        }
-    }
+	for (int i = 0; i < n - 1; i++)
+	{
+		for (int j = 0; j < n - i - 1; j++)
+		{
+			if (arr[j] > arr[j + 1])
+			{
+				int temp = arr[j];
+				arr[j] = arr[j + 1];
+				arr[j + 1] = temp;
+			}
+		}
+	}
 }
 
 int main()
 {
-    int arr[20], i, n;
-    printf("Enter the number of elements you want in array : ");
-    scanf("%d", &n);
-    for (i = 0; i < n; i++)
-    {
-        printf("\nEnter %d number: ", i + 1);
-        scanf("%d", &arr[i]);
-    }
+	int arr[20], i, n;
+	printf("Enter the number of elements you want in array : ");
+	scanf("%d", &n);
+	for (i = 0; i < n; i++)
+	{
+		printf("\nEnter %d number: ", i + 1);
+		scanf("%d", &arr[i]);
+	}
 
-    sort(arr, n);
-    printf("\nThe sorted array is:\n");
-    for (i = 0; i < n; i++)
-    {
-        printf("%d ", arr[i]);
-    }
-    return 0;
+	sort(arr, n);
+	printf("\nThe sorted array is:\n");
+	for (i = 0; i < n; i++)
+	{
+		printf("%d ", arr[i]);
+	}
+	return 0;
 }*/
 
-//WAP to implement Linear search using function
+// WAP to implement Linear search using function
 
-#include <stdio.h>
+/*#include <stdio.h>
 
-/*int linear(int [],int , int);
+int linear(int [],int , int);
 int main()
 {
 	int a[10],i,n,result=0;
 	printf("Enter the number of elements you want in array : ");
-       	scanf("%d", &n);
-    	for (i = 0; i < n; i++)
-    	{
-        	printf("\nEnter %d number: ", i + 1);
-        	scanf("%d", &a[i]);
-    	}
+		scanf("%d", &n);
+		for (i = 0; i < n; i++)
+		{
+			printf("\nEnter %d number: ", i + 1);
+			scanf("%d", &a[i]);
+		}
 	int num;
 	printf("\nEnter element to search: ");
 	scanf("%d",&num);
@@ -139,21 +139,3 @@ int linear (int a[],int n,int num)
 			return 1;
 	}
 }*/
-
-//WAP to add two matrices using function
-
-#include <stdio.h>
-int add(int []);
-int main()
-{
-	int a[10],,b[10],c[20],i,n,result=0;
-        printf("Enter the number of elements you want in array : ");
-        scanf("%d", &n);
-        for (i = 0; i < n; i++)
-        {
-                printf("\nEnter %d number: ", i + 1);
-                scanf("%d", &a[i]);
-        }
-
-	result = add(a,b,c);
-	printf("\nAddtion is 
