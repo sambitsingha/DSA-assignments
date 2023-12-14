@@ -88,14 +88,12 @@ int main()
     return 0;
 }*/
 
+// Sum of the diagonal elements
 #include <stdio.h>
-
-#define MAX 10
-
 int main()
 {
-    int matrix[MAX][MAX];
-    int i, j, n, diagonal_sum = 0;
+    int a[10][10];
+    int i, j, n, trace = 0;
 
     printf("Enter the size of the square matrix (max 10): ");
     scanf("%d", &n);
@@ -105,12 +103,12 @@ int main()
         for (j = 0; j < n; j++)
         {
             printf("Enter element [%d][%d]: ", i, j);
-            scanf("%d", &matrix[i][j]);
+            scanf("%d", &a[i][j]);
         }
     }
     for (i = 0; i < n; i++)
     {
-        diagonal_sum += matrix[i][i];
+        trace += a[i][i];
     }
 
     printf("\nThe matrix is:\n");
@@ -118,10 +116,10 @@ int main()
     {
         for (j = 0; j < n; j++)
         {
-            printf("%d\t", matrix[i][j]);
+            printf("%d\t", a[i][j]);
         }
         printf("\n");
     }
-    printf("\nThe sum of diagonal elements is: %d\n", diagonal_sum);
+    printf("\nThe sum of diagonal elements is: %d\n", trace);
     return 0;
 }
