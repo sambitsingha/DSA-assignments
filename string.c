@@ -116,3 +116,89 @@ int length(char str[])
         n++;
     return n;
 }*/
+
+// 7 - WAP to copy the content of one string to another using a user-defined function XSTRCPY (
+
+/*#include <stdio.h>
+void copy(char[], char[]);
+int main()
+{
+    char s1[10], s2[10];
+    printf("Enter a string: ");
+    scanf("%s", s1);
+    copy(s2, s1);
+    printf("\nCopied string is %s\n", s2);
+    return 0;
+}
+
+void copy(char s2[], char s1[])
+{
+    int i;
+    for (i = 0; s1[i] != '\0'; i++)
+    {
+        s2[i] = s1[i];
+    }
+    s2[i] = '\0';
+}*/
+
+// 8 - WAP to concatenate one string at the end of another string using a user-defined function XSTRCAT().
+
+/*#include <stdio.h>
+#include <string.h>
+void concat(char[], char[], char[]);
+int main()
+{
+    system("cls");
+    char s1[10], s2[10], s3[20];
+    printf("Enter string 1: ");
+    scanf("%s", s1);
+    printf("Enter string 2: ");
+    scanf("%s", s2);
+    concat(s1, s2, s3);
+    printf("\nConcatenated string is %s", s3);
+    return 0;
+}
+
+void concat(char s1[], char s2[], char s3[])
+{
+    int i, j;
+    int len1 = strlen(s1);
+    for (i = 0; s1[i] != '\0'; i++)
+        s3[i] = s1[i];
+    for (j = 0; s2[j] != '\0'; j++)
+        s3[i + j] = s2[j];
+    s3[i + j] = '\0';
+}*/
+
+// 9 -  WAP to compare to strings using a user-defined function XSTRCMP ().
+
+/*#include <stdio.h>
+int compare(char[], char[]);
+int main()
+{
+    char s1[10], s2[10];
+    printf("Enter string 1: ");
+    scanf("%s", s1);
+    printf("Enter string 2: ");
+    scanf("%s", s2);
+    int res = compare(s2, s1);
+    if (res == 1)
+        printf("\nBoth are strings are same");
+    else
+        printf("\nBoth are strings are different");
+    return 0;
+}
+
+int compare(char s2[], char s1[])
+{
+    int i, j;
+    for (i = 0; s1[i] != '\0'; i++)
+    {
+        for (j = 0; s2[j] != '\0'; j++)
+        {
+            if (s1[i] == s2[j])
+                return 1;
+        }
+    }
+    return 0;
+}*/
