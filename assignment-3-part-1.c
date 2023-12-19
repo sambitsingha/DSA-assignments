@@ -75,6 +75,7 @@ int main()
                 flag++;
                 break;
             }
+        }
     }
     // n should be greater than 1
     if (flag == 0)
