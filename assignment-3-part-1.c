@@ -77,15 +77,10 @@ int main()
             }
         }
     }
-    // n should be greater than 1
     if (flag == 0)
-    {
         printf("\nThe Given number is Prime");
-    }
     else
-    {
         printf("\nThe Given number is Composite");
-    }
     return 0;
 }*/
 
