@@ -90,5 +90,3 @@
 //     printf("Position of the element is: %d", i);
 //     return 0;
 // }
-
-// 4
