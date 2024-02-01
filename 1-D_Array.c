@@ -68,6 +68,7 @@ int main()
     for (i = n - 1; i >= pos; i--)
         a[i + 1] = a[i];
     a[pos] = val;
+    n++;
     printf("Modified Array:\n");
     for (i = 0; i <= n; i++)
     {
@@ -210,3 +211,39 @@ int main()
 }*/
 
 // 8 -  WAP to merge two arrays into a new array.
+
+/*#include <stdio.h>
+int main()
+{
+    int a[10], b[10], i, n1, n2;
+    printf("Enter szie of array 1: ");
+    scanf("%d", &n1);
+    for (i = 0; i < n1; i++)
+    {
+        printf("\nEnter element %d: ", i + 1);
+        scanf("%d", &a[i]);
+    }
+    printf("Enter size of array 2: ");
+    scanf("%d", &n2);
+    for (i = 0; i < n2; i++)
+    {
+        printf("\nEnter element %d: ", i + 1);
+        scanf("%d", &b[i]);
+    }
+    int mergedSize = n1 + n2;
+    int mergedArr[30];
+    for (i = 0; i < n1; i++)
+    {
+        mergedArr[i] = a[i];
+    }
+    for (i = 0; i < mergedSize; i++)
+    {
+        mergedArr[n1 + i] = b[i];
+    }
+    printf("\nMerged Array is: ");
+    for (i = 0; i < mergedSize; i++)
+    {
+        printf("%d\t", mergedArr[i]);
+    }
+    return 0;
+}*/
