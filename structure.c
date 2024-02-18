@@ -1,28 +1,27 @@
 /*#include <stdio.h>
 #include <math.h>
-struct POINT 
+struct POINT
 {
-	int Xco,Yco;
+	int Xco, Yco;
 };
 
 int main()
 {
-	struct POINT p1,p2;
+	struct POINT p1, p2;
 	printf("Enter coordinates of point 1: ");
-	scanf("%d%d",&p1.Xco,&p1.Yco);
+	scanf("%d%d", &p1.Xco, &p1.Yco);
 	printf("Enter coordinates of point 2: ");
-	scanf("%d%d",&p2.Xco,&p2.Yco);
-	float  dist = sqrt(pow((p2.Xco - p1.Xco),2) + pow((p2.Yco - p1.Yco),2));
-	printf("The distance between the points is %f\n",dist);
+	scanf("%d%d", &p2.Xco, &p2.Yco);
+	float dist = sqrt(pow((p2.Xco - p1.Xco), 2) + pow((p2.Yco - p1.Yco), 2));
+	printf("The distance between the points is %f\n", dist);
 	return 0;
 }*/
-
 
 // 2 - 2. WAP to define a structure DISTANCE having members as kms, and metres. Define a user-defined function ADDDISTANCE () which will receive two structure variables as its arguments and will return a structure variable.
 
 /*#include <stdio.h>
 struct DISTANCE add(struct DISTANCE , struct DISTANCE);
-struct DISTANCE 
+struct DISTANCE
 {
 	int km,m;
 };
@@ -89,25 +88,25 @@ int main()
 	struct STUDENT s[3];
 	int i;
 	printf("Enter details in the format\n Name \n Roll_no \n Branch \n CGPA \n");
-	for(i=0;i<3;i++)
+	for (i = 0; i < 3; i++)
 	{
-		printf("Enter details of student %d: ",i+1);
-		scanf("%s%d%s%f",s[i].name,&s[i].roll_no,s[i].branch,&s[i].cgpa);
+		printf("Enter details of student %d: ", i + 1);
+		scanf("%s%d%s%f", s[i].name, &s[i].roll_no, s[i].branch, &s[i].cgpa);
 	}
 	int max = s[0].cgpa;
 	int val;
-	for(i=0;i<3;i++)
+	for (i = 0; i < 3; i++)
 	{
-		if(max < s[i].cgpa)
+		if (max < s[i].cgpa)
 		{
 			max = s[i].cgpa;
 			val = i;
 		}
 	}
-	printf("Name is %s\n",s[val].name);
-	printf("Roll No =  %d\n",s[val].roll_no);
-	printf("Branch is %s\n",s[val].branch);
-	printf("CGPA is %f\n",s[val].cgpa);
+	printf("Name is %s\n", s[val].name);
+	printf("Roll No =  %d\n", s[val].roll_no);
+	printf("Branch is %s\n", s[val].branch);
+	printf("CGPA is %f\n", s[val].cgpa);
 	return 0;
 }*/
 
@@ -117,25 +116,25 @@ int main()
 #include <stdlib.h>
 int main()
 {
-	int *arr,n,i,sum = 0;
+	int *arr, n, i, sum = 0;
 	printf("Enter the size of array: ");
-	scanf("%d",&n);
-	arr = (int *) malloc (n * sizeof(int));
-	if( arr == NULL)
+	scanf("%d", &n);
+	arr = (int *)malloc(n * sizeof(int));
+	if (arr == NULL)
 	{
 		printf("Memory allocation failed");
 		exit(1);
 	}
 	else
 	{
-		for(i=0;i<n;i++)
+		for (i = 0; i < n; i++)
 		{
-			printf("Enter element %d: ",i+1);
-			scanf("%d",&arr[i]);
+			printf("Enter element %d: ", i + 1);
+			scanf("%d", &arr[i]);
 		}
-		for(i=0;i<n;i++)
+		for (i = 0; i < n; i++)
 			sum = sum + arr[i];
-		printf("Sum is %d\n",sum);
+		printf("Sum is %d\n", sum);
 	}
 	return 0;
 }*/
@@ -154,7 +153,7 @@ int main()
 	{
 		printf("Memory allocation failed");
 		exit(1);
-	}	
+	}
 	else
 	{
 		for(i=0;i<n;i++)
@@ -183,10 +182,9 @@ int main()
 	return 0;
 }*/
 
-
 // 7 - Linear Search using dynamic memeory allocation
 
-#include <stdio.h>
+/*#include <stdio.h>
 #include <stdlib.h>
 int main()
 {
@@ -224,6 +222,4 @@ int main()
 			printf("value not found");
 	}
 	return 0;
-}
-
-
+}*/
