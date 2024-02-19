@@ -1,4 +1,4 @@
-#include <stdio.h>
+/*#include <stdio.h>
 int binary(int[], int, int);
 int main()
 {
@@ -15,8 +15,8 @@ int main()
     printf("Enter element to find: ");
     scanf("%d", &num);
     res = binary(arr, n, num);
-    if (res == 1)
-        printf("Element found");
+    if (res != -1)
+        printf("Element found at index %d", res);
     else
         printf("Element not found");
     return 0;
@@ -25,17 +25,17 @@ int main()
 int binary(int arr[], int n, int num)
 {
     int mid, high, low;
-    high = arr[n - 1];
-    low = arr[0];
+    high = n - 1;
+    low = 0;
     while (low <= high)
     {
         mid = (low + high) / 2;
         if (arr[mid] == num)
-            return 1;
+            return mid;
         else if (num > arr[mid])
             low = mid + 1;
         else
             high = mid - 1;
     }
-    return 0;
-}
+    return -1;
+}*/
