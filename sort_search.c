@@ -1,34 +1,34 @@
 // 1 - WAP to implement linear seach
 
 /*#include <stdio.h>
-int linear(int [], int , int );
+int linear(int[], int, int);
 int main()
 {
-	int arr[20],i,n;
+	int arr[20], i, n;
 	printf("Enter size of array: ");
-	scanf("%d",&n);
-	for(i=0;i<n;i++)
+	scanf("%d", &n);
+	for (i = 0; i < n; i++)
 	{
-		printf("Enter element %d: ",i+1);
-		scanf("%d",&arr[i]);
+		printf("Enter element %d: ", i + 1);
+		scanf("%d", &arr[i]);
 	}
 	int num;
 	printf("Enter element to search: ");
-	scanf("%d",&num);
-	int res = linear(arr,n,num);
-	if(res!=0)
-		printf("Element found at %d",res);
+	scanf("%d", &num);
+	int res = linear(arr, n, num);
+	if (res != 0)
+		printf("Element found at %d", res);
 	else
 		printf("Element not found");
 	return 0;
 }
 
-int linear(int arr[],int n,int num)
+int linear(int arr[], int n, int num)
 {
 	int i;
-	for(i=0;i<n;i++)
+	for (i = 0; i < n; i++)
 	{
-		if(arr[i] == num)
+		if (arr[i] == num)
 			return i;
 	}
 	return 0;
@@ -123,7 +123,7 @@ int binary(int arr[],int num,int high , int low)
 /*#include <stdio.h>
 void sort(int [],int);
 int main()
-{ 
+{
 	int arr[20],i,n;
 	printf("Enter size: ");
 	scanf("%d",&n);
@@ -157,32 +157,32 @@ void sort(int arr[],int n)
 
 // 5 - Selection Sort
 
-/*#include <stdio.h> 
+/*#include <stdio.h>
 
-void swap(int *xp, int *yp) 
-{ 
-		int temp = *xp; 
-			*xp = *yp; 
-				*yp = temp; 
-} 
+void swap(int *xp, int *yp)
+{
+		int temp = *xp;
+			*xp = *yp;
+				*yp = temp;
+}
 
-void selectionSort(int arr[], int n) 
-{ 
-	int i, j, min_idx; 
-	for (i = 0; i < n-1; i++) 
-		{ 
-			min_idx = i; 
-			for (j = i+1; j < n; j++) 
-				if (arr[j] < arr[min_idx]) 
-					min_idx = j; 
-					if(min_idx != i) 
-						swap(&arr[min_idx], &arr[i]); 
-		} 
-} 
+void selectionSort(int arr[], int n)
+{
+	int i, j, min_idx;
+	for (i = 0; i < n-1; i++)
+		{
+			min_idx = i;
+			for (j = i+1; j < n; j++)
+				if (arr[j] < arr[min_idx])
+					min_idx = j;
+					if(min_idx != i)
+						swap(&arr[min_idx], &arr[i]);
+		}
+}
 
 
-int main() 
-{ 
+int main()
+{
 	int arr[20],n,i;
 	printf("Enter size: ");
 	scanf("%d",&n);
@@ -191,13 +191,13 @@ int main()
 		printf("Enter element %d: ",i+1);
 		scanf("%d",&arr[i]);
 	}
-	selectionSort(arr, n); 
-	printf("Sorted array: \n"); 
+	selectionSort(arr, n);
+	printf("Sorted array: \n");
 	for(i=0;i<n;i++)
 	{
 		printf("%d\t",arr[i]);
 	}
-	return 0; 
+	return 0;
 }*/
 
 // 6 - Insertion Sort
