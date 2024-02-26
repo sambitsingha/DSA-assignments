@@ -1,7 +1,5 @@
-#include <stdio.h>
-
+/*#include <stdio.h>
 #define MAX_SIZE 100
-
 typedef struct
 {
     int row;
@@ -60,4 +58,4 @@ int main()
     }
 
     return 0;
-}
+}*/
