@@ -158,47 +158,46 @@ void sort(int arr[],int n)
 // 5 - Selection Sort
 
 /*#include <stdio.h>
-
-void swap(int *xp, int *yp)
-{
-		int temp = *xp;
-			*xp = *yp;
-				*yp = temp;
-}
-
-void selectionSort(int arr[], int n)
-{
-	int i, j, min_idx;
-	for (i = 0; i < n-1; i++)
-		{
-			min_idx = i;
-			for (j = i+1; j < n; j++)
-				if (arr[j] < arr[min_idx])
-					min_idx = j;
-					if(min_idx != i)
-						swap(&arr[min_idx], &arr[i]);
-		}
-}
-
-
+void selcSort(int arr[10], int n);
+void swap(int *x, int *y);
 int main()
 {
-	int arr[20],n,i;
+	int arr[10], i, n;
 	printf("Enter size: ");
-	scanf("%d",&n);
-	for(i = 0;i<n;i++)
-	{
-		printf("Enter element %d: ",i+1);
-		scanf("%d",&arr[i]);
-	}
-	selectionSort(arr, n);
-	printf("Sorted array: \n");
-	for(i=0;i<n;i++)
-	{
-		printf("%d\t",arr[i]);
-	}
+	scanf("%d", &n);
+	printf("ENter element: \n");
+	for (i = 0; i < n; i++)
+		scanf("%d", &arr[i]);
+	selcSort(arr, n);
+	printf("Sorted array is: \n");
+	for (i = 0; i < n; i++)
+		printf("%d\t", arr[i]);
 	return 0;
-}*/
+}
+
+void selcSort(int arr[10], int n)
+{
+	int i, j;
+	for (i = 0; i < n; i++)
+	{
+		int min = i;
+		for (j = i + 1; j < n; j++)
+		{
+			if (arr[j] < arr[min])
+				arr[min] = arr[j];
+		}
+		swap(&arr[min], &arr[i]);
+	}
+}
+
+void swap(int *x, int *y)
+{
+	int *temp;
+	temp = x;
+	x = y;
+	y = temp;
+}
+*/
 
 // 6 - Insertion Sort
 
