@@ -202,38 +202,37 @@ void swap(int *x, int *y)
 // 6 - Insertion Sort
 
 #include <stdio.h>
-void sort(int[], int);
-int main()
-{
-	int arr[20], n, i;
-	printf("Enter size: ");
-	scanf("%d", &n);
-	for (i = 0; i < n; i++)
-	{
-		printf("Enter element %d: ", i + 1);
-		scanf("%d", &arr[i]);
-	}
-	sort(arr, n);
-	printf("Sorted array is: \n");
-	for (i = 0; i < n; i++)
-	{
-		printf("%d\t", arr[i]);
-	}
-	return 0;
-}
 
-void sort(int arr[], int n)
+void insertionSort(int arr[], int n)
 {
-	int i, j, key;
+	int i, temp, j;
 	for (i = 1; i < n; i++)
 	{
-		key = arr[i];
+		temp = arr[i];
 		j = i - 1;
-		while (j >= 0 && key < arr[j])
+
+		while (j >= 0 && arr[j] > temp)
 		{
 			arr[j + 1] = arr[j];
 			j--;
 		}
-		arr[j + 1] = key;
+		arr[j + 1] = temp;
 	}
+}
+
+int main()
+{
+	int arr[10], n, i;
+	printf("Enter the number of elements: ");
+	scanf("%d", &n);
+	printf("Enter the elements: ");
+	for (i = 0; i < n; i++)
+		scanf("%d", &arr[i]);
+	insertionSort(arr, n);
+	printf("Array after sorting: \n");
+	for (i = 0; i < n; i++)
+	{
+		printf("%d ", arr[i]);
+	}
+	return 0;
 }
