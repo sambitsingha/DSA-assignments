@@ -1,5 +1,5 @@
 // 1  - 1.	WAP to find out the Triplet representation of any inputted Sparse matrix.
-/*#include <stdio.h>
+#include <stdio.h>
 #define MAX_SIZE 100
 void findTriplets(int matrix[MAX_SIZE][MAX_SIZE], int rows, int cols)
 {
@@ -43,6 +43,5 @@ int main()
     findTriplets(matrix, rows, cols);
     return 0;
 }
-*/
 
 // 2 - 2.	WAP to find out the Transpose of any Sparse matrix. Input the Triplet matrix through the keyboard.
