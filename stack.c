@@ -197,7 +197,7 @@ int main()
 
 // 4 - WAP to check the validity of any expression containing nested parenthesis using a stack.
 
-#include <stdio.h>
+/*#include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
 #include <string.h>
@@ -259,11 +259,10 @@ int main()
     fgets(expression, N, stdin);
     // Remove newline character from fgets
     expression[strcspn(expression, "\n")] = '\0';
-
     if (isValidExpression(expression))
         printf("Expression is valid\n");
     else
         printf("Expression is not valid\n");
 
     return 0;
-}
+}*/
