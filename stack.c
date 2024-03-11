@@ -196,3 +196,74 @@ int main()
 }*/
 
 // 4 - WAP to check the validity of any expression containing nested parenthesis using a stack.
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <string.h>
+#define N 100
+
+char stack[N];
+int top = -1;
+
+void push(char value)
+{
+    if (top == N - 1)
+        printf("Stack Overflow\n");
+    else
+        stack[++top] = value;
+}
+
+char pop()
+{
+    if (top == -1)
+    {
+        printf("Stack Underflow\n");
+        return '\0';
+    }
+    else
+        return stack[top--];
+}
+
+bool isValidExpression(char *expression)
+{
+    int len = strlen(expression);
+    for (int i = 0; i < len; i++)
+    {
+        if (expression[i] == '(' || expression[i] == '[' || expression[i] == '{')
+        {
+            push(expression[i]);
+        }
+        else if (expression[i] == ')' || expression[i] == ']' || expression[i] == '}')
+        {
+            if (top == -1)
+                return false;
+
+            char topChar = pop();
+            if ((expression[i] == ')' && topChar != '(') ||
+                (expression[i] == ']' && topChar != '[') ||
+                (expression[i] == '}' && topChar != '{'))
+            {
+                return false;
+            }
+        }
+    }
+
+    return top == -1;
+}
+
+int main()
+{
+    char expression[N];
+    printf("Enter an expression: ");
+    fgets(expression, N, stdin);
+    // Remove newline character from fgets
+    expression[strcspn(expression, "\n")] = '\0';
+
+    if (isValidExpression(expression))
+        printf("Expression is valid\n");
+    else
+        printf("Expression is not valid\n");
+
+    return 0;
+}
