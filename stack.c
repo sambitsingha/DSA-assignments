@@ -11,17 +11,23 @@ void push(int value)
         printf("Stack Overflow\n");
     else
     {
-        stack[++top] = value;
+        top = top + 1;
+        stack[top] = value;
         printf("Element %d pushed to stack\n", value);
     }
 }
 
 void pop()
 {
+    int value;
     if (top == -1)
         printf("Stack Underflow\n");
     else
-        printf("Element %d popped from stack\n", stack[top--]);
+    {
+        value = stack[top];
+        printf("Element %d popped from stack\n",value);
+        top = top - 1;
+    }
 }
 
 void traverse()
@@ -32,9 +38,7 @@ void traverse()
     {
         printf("Stack elements: ");
         for (int i = top; i >= 0; i--)
-        {
             printf("%d ", stack[i]);
-        }
         printf("\n");
     }
 }
