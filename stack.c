@@ -117,8 +117,7 @@ int main()
 {
     char str[N];
     printf("Enter a string: ");
-    fgets(str, N, stdin);
-    // Remove newline character from fgets
+    scanf("%s", str);
     str[strcspn(str, "\n")] = '\0';
     reverseString(str);
     printf("Reversed string: %s\n", str);
