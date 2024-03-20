@@ -201,7 +201,7 @@ void swap(int *x, int *y)
 
 // 6 - Insertion Sort
 
-#include <stdio.h>
+/*#include <stdio.h>
 
 void insertionSort(int arr[], int n)
 {
@@ -236,3 +236,4 @@ int main()
 	}
 	return 0;
 }
+*/
