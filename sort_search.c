@@ -184,7 +184,7 @@ void selcSort(int arr[10], int n)
 		for (j = i + 1; j < n; j++)
 		{
 			if (arr[j] < arr[min])
-				arr[min] = arr[j];
+				min = j;
 		}
 		swap(&arr[min], &arr[i]);
 	}
